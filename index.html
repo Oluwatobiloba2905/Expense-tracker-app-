@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Expense Tracker</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Concert+One&family=Grandstander:ital,wght@0,300;0,500;0,800;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container1">
+        <h1 id="header"> An Expense Tracker
+        </h1>
+        <h4 id="closing">Remaining Balance</h4>
+        <h3 id="cbalance">0.00 $</h3>
+
+        <div class="input-div">
+            <label for="basic-url" id="form-label">Amount<br>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="input">
+                    <span class="sideicon">.00</span>
+                </div>
+                (Input positive for Income, Input Negative for Outcome)</label><br>
+           
+        </div>
+        <div class="row" id="box">
+            <div class="col-md-5 income">
+                <span><i class="far fa-money-bill-alt" style='font-size:40px;color:white'></i></span>
+                <h3>Income</h3>
+                <h3 id="income">0.00 Naira</h3>
+            </div>
+            <div class="col-md-5 expense">
+                <span><i class='fas fa-hand-holding-usd' style='font-size:42px;color:white'></i></span>
+                <h3>Expense</h3>
+                <h3 id="expense">0.00 Naira</h3>
+            </div>
+        </div>
+        >
+
+        <div class="col-md-8 mx-auto form">
+            <div class="descrip">
+                <input type="text" id="descrip" placeholder="Enter description" style='font-size:42px;color:white'>
+            </div>
+
+        </div>
+
+        <div class="btn-div col-md-4">
+            <button class="button mx-5" type="button" id="Save" onclick="expense()">Add Transaction</button>
+        </div>
+    </div>
+    <div id="transaction_record">
+        <h2 class="tran_his">Transaction History</h2>
+        <h5 id="remover">Click the History to delete</h5>
+
+    </div>
+    <h2 id="copy">©Tobias</h2>
+</body>
+
+<script src='script.js'></script>
+
+</html>
